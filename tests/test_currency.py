@@ -1,11 +1,11 @@
 from unittest.mock import MagicMock, patch, call
 
-from currency_quotes.currency_quotes import \
+from currency.currency import \
     _get_currency, calculate_to_convert, construct_function, \
     get_information_coin, get_value_to_be_converted, show_conversion_result, \
     main
 
-patch_root = 'currency_quotes.currency_quotes'
+patch_root = 'currency.currency'
 
 
 @patch(f'{patch_root}.requests')
